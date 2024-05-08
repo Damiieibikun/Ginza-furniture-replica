@@ -248,7 +248,12 @@ body {
 }
 
 .griditems-2 ul {
-  padding-right: 25px;
+  padding: 0;
+}
+
+.griditems-2 ul :nth-child(1) {
+  background-color: red;
+  color: white;
 }
 
 .griditems-2 li {
@@ -526,17 +531,132 @@ p {
   background-color: transparent;
   text-transform: uppercase;
   font-weight: 600;
-  transition: .1s linear all;
-  -webkit-transition: .1s linear all;
-  -moz-transition: .1s linear all;
-  -ms-transition: .1s linear all;
-  -o-transition: .1s linear all;
+  transition: 0.1s linear all;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -ms-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
 }
 
 .grid5-items button:hover {
   color: rgb(218, 15, 15);
   cursor: pointer;
 }
+
+/* footer section */
+footer {
+  background-color: #f6f6f6;
+  padding: 30px 0;
+  margin-top: 80px;
+}
+
+footer ul li {
+  list-style: none;
+  color: #797878;
+}
+
+.grid6 {
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  gap: 20px;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+#grid6-items3fr {
+  align-items: start;
+  gap: 20px;
+}
+
+#grid6-items3fr p {
+  color: #797878;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+#footer-logo {
+  width: 100px;
+}
+
+.grid6-items p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.grid6-items ul {
+  line-height: 2.3;
+  padding: 0;
+}
+
+.grid6-items ul :nth-child(1) {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.grid6-items ul li {
+  font-size: 0.85rem;
+  transition: 0.3s linear all;
+  -webkit-transition: 0.3s linear all;
+  -moz-transition: 0.3s linear all;
+  -ms-transition: 0.3s linear all;
+  -o-transition: 0.3s linear all;
+}
+
+.grid6-items ul li:hover {
+  color: red;
+  cursor: pointer;
+}
+#opening-hours li:hover {
+  cursor: auto;
+  color: #797878;
+}
+
+#opening-hours :nth-child(1):hover {
+  color: black;
+}
+
+.grid6-items :nth-child(1):hover {
+  color: black;
+  cursor: auto;
+}
+
+.footer-copyright-info {
+  justify-content: space-between;
+  border-top: 1px solid #00000021;
+  width: 75%;
+  margin: auto;
+  padding: 10px 0;
+  font-size: 14px;
+}
+#ginza {
+  font-weight: 400;
+}
+.footer-copyright-info p {
+  font-weight: 400;
+  color: #797878;
+  text-align: center;
+}
+
+.footer-copyright-info ul {
+  gap: 30px;
+  padding: 0;
+}
+
+.footer-copyright-info ul li:hover {
+  color: red;
+  cursor: pointer;
+  transition: 0.3s linear all;
+  -webkit-transition: 0.3s linear all;
+  -moz-transition: 0.3s linear all;
+  -ms-transition: 0.3s linear all;
+  -o-transition: 0.3s linear all;
+}
+
+/* media queries */
+
 /* @media screen and (max-width:320px)
 {
   body{
