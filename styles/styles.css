@@ -1,0 +1,348 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Repeat styles */
+.mt {
+  margin-top: 30px;
+}
+
+/* hero section */
+
+.hero {
+  background-color: #eff1f5;
+  width: 100%;
+  height: 70vh;
+}
+
+.hero-img {
+  background-image: url("../images/hero-1.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* grid 1 */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.grid-items {
+  height: 300px;
+  perspective: 1000px;
+  /* transition:  transform 0.5s ease-in-out; */
+
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+
+.card1 {
+  z-index: 2;
+}
+
+.bg1 {
+  background-image: url("../images/h1-banner-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg2 {
+  background-image: url("../images/h1-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg3 {
+  background-image: url("../images/h1-banner-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card2 {
+  z-index: 1;
+  transform: rotateY(180deg);
+  opacity: 0;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  border: 0.6px solid #ddd;
+}
+
+.grid-items:hover .card1 {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.grid-items:hover .card2 {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  opacity: 1;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.text h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* grid 2 */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+}
+
+.griditems-2 {
+  position: relative;
+  height: 400px;
+  padding-bottom: 10px;
+}
+
+.griditems-2 ul li {
+  list-style: none;
+  /* text-align: center; */
+}
+
+ul {
+  padding-right: 25px;
+}
+
+li {
+  border-bottom: 0.5px solid #ddd;
+  padding: 20px 70px;
+  background-color: #f0f0f0;
+}
+
+li:hover {
+  background-color: red;
+  color: white;
+  transition: 0.8s all;
+  -webkit-transition: 0.8s all;
+  -moz-transition: 0.8s all;
+  -ms-transition: 0.8s all;
+  -o-transition: 0.8s all;
+  cursor: pointer;
+}
+
+.grid2-sidenav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.p1 {
+  /* text-align: center; */
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.p2 {
+  /* text-align: center; */
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #929292;
+}
+
+.grid2-card1 {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  height: 250px;
+  margin-top: 50px;
+  /* opacity: 0.5; */
+}
+
+.grid2-card2 {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  height: 250px;
+  transition: 2s ease-in-out;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -ms-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+  margin-top: 50px;
+}
+
+.griditems-2:hover .grid2-card2 {
+  display: none;
+  cursor: pointer;
+}
+
+.grid2-img1 {
+  background-image: url("../images/2_1-600x800.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid2-img2 {
+  background-image: url("../images/2-600x800.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-holder {
+  position: absolute;
+  bottom: 0;
+  margin-top: 10px;
+}
+
+.text-holder h2 {
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.text-holder p {
+  margin: 0;
+  letter-spacing: 1.3px;
+  margin-bottom: 5px;
+}
+
+.red {
+  color: red;
+  font-weight: 600;
+}
+
+/* third section */
+
+.section {
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-item {
+  position: relative;
+  perspective: 1000px;
+}
+
+.section-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.front-card {
+  transform-origin: left;
+  z-index: 2;
+  background-image: url("../images/h1-banner-5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.back-card,
+.back-card2 {
+  z-index: 1;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+}
+
+.front-card2 {
+  transform-origin: right;
+  z-index: 2;
+  background-image: url("../images/blog-details-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.section-item:hover .front-card {
+  transform: rotateY(35deg);
+  -webkit-transform: rotateY(35deg);
+  -moz-transform: rotateY(35deg);
+  -ms-transform: rotateY(35deg);
+  -o-transform: rotateY(35deg);
+  cursor: pointer;
+}
+
+.section-item:hover .front-card2 {
+  transform: rotateY(-30deg);
+  -webkit-transform: rotateY(-30deg);
+  -moz-transform: rotateY(-30deg);
+  -ms-transform: rotateY(-30deg);
+  -o-transform: rotateY(-30deg);
+  cursor: pointer;
+}
+
+.des {
+  right: 0;
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  z-index: 999;
+}
+
+.des2 {
+  left: 0;
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  z-index: 999;
+}
+.text-holder2 {
+  padding: 17px;
+}
+
+.text-holder2 h2,
+p {
+  margin: 0;
+}
+
+/* fourth section */
