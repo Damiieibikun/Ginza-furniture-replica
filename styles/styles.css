@@ -44,11 +44,10 @@ body {
 
 .fixed-nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background-color: #262626;
   height: 54px;
   top: 0;
-  overflow: hidden;
   z-index: 1000;
 }
 
@@ -108,6 +107,13 @@ body {
   margin: auto;
   justify-content: space-between;
   padding: 30px 0;
+}
+
+.hero-img-nav-items2 {
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  display: none;
 }
 
 .logo img {
@@ -233,7 +239,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   width: 80%;
   margin: auto;
-  gap: 20px;
+  gap: 60px;
 }
 
 .griditems-2 {
@@ -460,9 +466,9 @@ body {
   padding: 17px;
 }
 
-.text-holder2 h2,
-p {
-  margin: 0;
+.text-holder2 p
+ {
+  font-size: 0.9rem;
 }
 
 /* fourth section */
@@ -505,7 +511,7 @@ p {
   border-top: 1px solid #80808024;
   width: 80%;
   margin: auto;
-  padding: 20px 50px;
+  padding: 20px 35px;
 }
 
 .grid5-items p {
@@ -657,10 +663,95 @@ footer ul li {
 
 /* media queries */
 
-/* @media screen and (max-width:320px)
-{
-  body{
-    overflow-x: hidden;
+@media screen and (max-width:767px) and (min-width: 321px){
+  .main{
+    min-width: 320px;
+    overflow: hidden;
   }
   
-} */
+    .hero{
+      height: 50vh;
+    }
+  
+    .hero-img{
+      height: 300px;
+    }
+  
+    .hero-img-nav-items{
+      display: none;
+    }
+    .hero-img-nav-items2{
+      display: flex;
+    }
+  
+    .hero-img-nav{
+      display: none;
+    }
+  
+  
+  
+    .grid,
+    .grid-2,
+    .grid3,
+    .grid6{
+      grid-template-columns: 1fr;
+    }
+  
+    .bg1,
+    .bg2,
+    .bg3{
+      background-size: contain;
+    }
+  
+    .grid-items{
+      height: 160px;
+    }
+
+}
+
+@media screen and (max-width:320px)
+{
+.main{
+  min-width: 320px;
+  overflow: hidden;
+}
+
+  .hero{
+    height: 50vh;
+  }
+
+  .hero-img{
+    height: 300px;
+  }
+
+  .hero-img-nav-items{
+    display: none;
+  }
+  .hero-img-nav-items2{
+    display: flex;
+  }
+
+  .hero-img-nav{
+    display: none;
+  }
+
+
+
+  .grid,
+  .grid-2,
+  .grid3,
+  .grid6{
+    grid-template-columns: 1fr;
+  }
+
+  .bg1,
+  .bg2,
+  .bg3{
+    background-size: contain;
+  }
+
+  .grid-items{
+    height: 160px;
+  }
+  
+}
