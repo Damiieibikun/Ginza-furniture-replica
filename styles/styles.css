@@ -31,6 +31,9 @@ body {
 .justify-center {
   justify-content: center;
 }
+.gap{
+  gap: 10px;
+}
 
 /* main */
 .main {
@@ -43,7 +46,7 @@ body {
 .hero {
   background-color: #eff1f5;
   width: 100%;
-   height: 80vh;
+  height: 80vh;
 }
 
 /* fixed nav */
@@ -83,7 +86,7 @@ body {
 
 .hero-img {
   background-image: url("../images/hero-1.jpg");
-    height: 80vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -251,13 +254,12 @@ body {
 
 .griditems-2 {
   position: relative;
-  height: 400px;
+  height: 445px;
   padding-bottom: 10px;
 }
 
 .griditems-2 ul li {
   list-style: none;
-
 }
 
 .griditems-2 ul {
@@ -291,14 +293,12 @@ body {
 }
 
 .p1 {
-
   margin: 0;
   font-size: 1.4rem;
   font-weight: 600;
 }
 
 .p2 {
- 
   margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
@@ -308,15 +308,14 @@ body {
 .grid2-card1 {
   position: absolute;
   width: 100%;
-  height: 250px;
+  height: 290px;
   margin-top: 50px;
-  
 }
 
 .grid2-card2 {
   position: absolute;
   width: 100%;
-  height: 250px;
+  height: 290px;
   transition: 2s ease-in-out;
   -webkit-transition: 2s ease-in-out;
   -moz-transition: 2s ease-in-out;
@@ -378,6 +377,38 @@ body {
 .red {
   color: red;
   font-weight: 600;
+}
+
+.grid2-priceinfo {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 60px;
+}
+
+.grid2-priceinfo div {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: white;
+  text-align: center;
+}
+
+.red-price {
+  background-color: red;
+}
+.black-price {
+  background-color: black;
+}
+
+.lighttxt{
+  color: #797878;
 }
 
 /* third section grid 3 */
@@ -694,10 +725,9 @@ footer ul li {
     background-position-x: 67%;
   }
 
-  .fixed-nav-items button{
+  .fixed-nav-items button {
     padding: 7px 20px;
     font-size: 0.8rem;
-
   }
   .bag-items {
     position: absolute;
@@ -744,10 +774,9 @@ footer ul li {
     background-position-x: 67%;
   }
 
-  .fixed-nav-items button{
+  .fixed-nav-items button {
     padding: 7px 20px;
     font-size: 0.8rem;
-
   }
 
   .bag-items {
@@ -786,7 +815,7 @@ footer ul li {
 
   .text-holder2 p {
     font-size: 0.76rem;
-}
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -800,10 +829,9 @@ footer ul li {
     background-position-x: 67%;
   }
 
-  .fixed-nav-items button{
+  .fixed-nav-items button {
     padding: 7px 20px;
     font-size: 0.8rem;
-
   }
 
   .bag-items {
@@ -842,5 +870,5 @@ footer ul li {
 
   .text-holder2 p {
     font-size: 0.76rem;
-}
+  }
 }
