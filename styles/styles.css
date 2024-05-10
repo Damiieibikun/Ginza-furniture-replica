@@ -509,6 +509,20 @@ body {
   font-size: 0.9rem;
 }
 
+
+.grid3-card-txt-info{
+  padding-left: 50px;
+  align-items: start;
+  gap: 5px;
+}
+
+.grid3-card-txt-info h3{
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+  color: #262626;
+}
+
 /* fourth section */
 .grid4 {
   background-color: #f6f6f6;
@@ -930,6 +944,10 @@ footer ul li {
     cursor: pointer;
 }
 
+.grid3-card-txt-info h3{
+  font-size: 1.5rem;
+}
+
 .footer-copyright-info {
   justify-content: center;
 }
@@ -1027,7 +1045,9 @@ footer ul li {
     -o-transform: rotateY(-35deg);
     cursor: pointer;
 }
-
+.grid3-card-txt-info h3{
+  font-size: 1.5rem;
+}
 
 }
 
@@ -1122,5 +1142,8 @@ footer ul li {
     -ms-transform: rotateY(-40deg);
     -o-transform: rotateY(-40deg);
     cursor: pointer;
+}
+.grid3-card-txt-info h3{
+  font-size: 1.5rem;
 }
 }
