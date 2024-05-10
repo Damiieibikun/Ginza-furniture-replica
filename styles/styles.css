@@ -331,6 +331,21 @@ body {
   opacity: 0;
 }
 
+.grid2-addtocart{
+  position: absolute;
+  bottom: 15px;
+  background-color: white;
+  width: 90%;
+  justify-content: space-around;
+  margin: 0 5%;
+  /* border: 1px solid grey; */
+  box-shadow: 2px 2px 7px #797878a4;
+}
+
+.grid2-addtocart p{
+ font-size: 0.8rem;
+}
+
 .grid2-img {
   background-repeat: no-repeat;
   background-size: cover;
